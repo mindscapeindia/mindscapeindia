@@ -66,7 +66,81 @@
   </nav>
 
   <main class="container">
-    <h1>Mindscape India के वीडियो</h1> <h2>हमारे वीडियो</h2>
+    <h1>Mindscape India के वीडियो</h1> <h2>हमारे वीडियो</h2> <!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mindscape India - Videos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #007bff;
+    }
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .video-container iframe {
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 100%;
+    }
+    .video-large {
+      width: 560px;
+      height: 315px;
+    }
+    .video-short {
+      width: 315px;
+      height: 560px;
+    }
+    @media (max-width: 700px) {
+      .video-large,
+      .video-short {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>हमारे वीडियो</h2>
+
+  <div class="video-container">
+
+    <!-- पहला वीडियो -->
+    <iframe class="video-large"
+      src="https://www.youtube.com/embed/Fq7YzN-lWoY"
+      title="Mindscape India Video 1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+    <!-- दूसरा वीडियो (YouTube Shorts) -->
+    <iframe class="video-short"
+      src="https://www.youtube.com/embed/yquo5EQkRqU"
+      title="Mindscape India Short Video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
+</body>
+</html>
 
 <div style="text-align: center; margin-top: 20px;">
   <iframe width="560" height="315"
