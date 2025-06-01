@@ -1,41 +1,67 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>हमारे वीडियो | Mindscape India</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mindscape India - वीडियो</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    nav {
+      background-color: #004AAD;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border: none;
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>हमारे वीडियो</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">होम</a></li>
-        <li><a href="about.html">हमारे बारे में</a></li>
-        <li><a href="blog.html">लेख</a></li>
-        <li><a href="podcast.html">पॉडकास्ट</a></li>
-        <li><a href="videos.html" class="active">वीडियो</a></li>
-        <li><a href="contact.html">संपर्क करें</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">होम</a></li>
+      <li><a href="about.html">हमारे बारे में</a></li>
+      <li><a href="blog.html">लेख</a></li>
+      <li><a href="podcast.html">पॉडकास्ट</a></li>
+      <li><a href="videos.html">वीडियो</a></li>
+      <li><a href="contact.html">संपर्क करें</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <section>
-      <h2>सोच बदलने वाले वीडियो</h2>
-
-      <!-- पहला वीडियो -->
-      <div class="video">
-        <iframe width="560" height="315" src="src="https://www.youtube.com/embed/WXfxr2nfFfY"
-        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-      </div>
-
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Mindscape India</p>
-  </footer>
+  <div class="container">
+    <h1>Mindscape India के वीडियो</h1>
+    <iframe src="https://www.youtube.com/embed/WXfxr2nfFfY" allowfullscreen></iframe>
+    <p>यह हमारा खास वीडियो है।</p>
+  </div>
 </body>
 </html>
